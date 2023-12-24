@@ -30,7 +30,9 @@ return {
             "cssls",
             "tailwindcss",
             "lua_ls",
-            "pyright"
+            "pyright",
+            "clangd",
+            "omnisharp"
         }
 
         for _, srv in ipairs(lsp_servers) do
@@ -54,6 +56,12 @@ return {
                     }
                 },
             },
+        })
+
+        lspconfig["omnisharp"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            cmd = { "omnisharp", "--languageserver" }
         })
     end
 }

@@ -21,7 +21,8 @@ return {
                 "tailwindcss",
                 "lua_ls",
                 "pyright",
-                "emmet_ls",
+                "clangd",
+                "omnisharp",
             },
             automatic_installation = true
         })
