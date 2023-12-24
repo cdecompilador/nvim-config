@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 
 require("remaps")
 require("editor")
+require("autocmds")
 
 require("lazy").setup({
 	{ import = "plugins" },
