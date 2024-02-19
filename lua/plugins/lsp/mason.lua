@@ -23,6 +23,7 @@ return {
                 "pyright",
                 "clangd",
                 "omnisharp",
+                "rust_analyzer",
             },
             automatic_installation = true
         })

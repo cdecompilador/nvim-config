@@ -33,3 +33,8 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
         vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
     end
 })
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead", "BufEnter" }, {
+    pattern = { "*.xaml", "*.axaml", "*.razor" },
+    command = "setf xml"
+})

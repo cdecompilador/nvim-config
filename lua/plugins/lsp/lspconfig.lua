@@ -32,7 +32,8 @@ return {
             "lua_ls",
             "pyright",
             "clangd",
-            "omnisharp"
+            "omnisharp",
+            "rust_analyzer"
         }
 
         for _, srv in ipairs(lsp_servers) do

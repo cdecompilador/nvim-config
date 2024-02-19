@@ -17,6 +17,8 @@ return {
 		vim.opt.completeopt = "menu,menuone,noselect"
 
 		cmp.setup({
+            -- Important, I like to press <C-n>
+            preselect = cmp.PreselectMode.None,
 			mapping = cmp.mapping.preset.insert({
 				["<Esc>"] = cmp.mapping.abort(),
 				["C-n"] = cmp.mapping.complete(),

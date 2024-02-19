@@ -8,6 +8,6 @@ return {
         }
     },
     init = function()
-        require("onedark").load()
+        -- require("onedark").load()
     end
 }
